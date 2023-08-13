@@ -7,3 +7,21 @@
   border: 2px solid #fff;
   border-radius: 6px;
 }
+.card .card-front {
+  transform: rotateY(90deg);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+}
+.flipped .card-front {
+  transform: rotateY(0);
+  transition-delay: 0.2s;
+}
+.card .card-back {
+  transform: rotateY(0);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.2s;
+}
+.flipped .card-back {
+  transform: rotateY(90deg);
+  transition-delay: 0.2s;
+}
